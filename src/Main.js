@@ -42,7 +42,7 @@ class Main extends React.Component {
   render(){
     return (
       <div>
-        <Header artists={ this.state.artists } albums={ this.state.albums } changeView={ this.changeView }/>
+        <Header view={this.state.view} artists={ this.state.artists } albums={ this.state.albums } changeView={ this.changeView }/>
         <h1>Welcome to Acme Music World!</h1>
 
         { this.state.view === 'albums' 

@@ -1,14 +1,14 @@
 import React from 'react';
 
 const Header = (props) => {
-  const { artists, albums, changeView } = props;
+  const { artists, albums, changeView, view } = props;
   console.log('props', props);
   return (
     <div>
       <ul id='menu'>
-        <li id="home" onClick={() => changeView('home')}>Home</li>
-        <li id="artists" onClick={() => changeView('artists')}>Artists ({artists.length})</li>
-        <li id="albums" onClick={() => changeView('albums')}>Albums ({albums.length})</li>
+        <li className={view === '' ? 'selected' : ''} id="home" onClick={() => changeView('home')}>Home</li>
+        <li className={view === 'artists' ? 'selected' : ''} id="artists" onClick={() => changeView('artists')}>Artists ({artists.length})</li>
+        <li className={view === 'albums' ? 'selected' : ''} id="albums" onClick={() => changeView('albums')}>Albums ({albums.length})</li>
       </ul>
     </div>
   )

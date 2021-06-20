@@ -38,3 +38,6 @@ img{
   width: 50%;
   margin-top: 10rem;
 }
+.selected{
+  background-color:darkseagreen;
+}
