@@ -2,7 +2,6 @@ import React from 'react';
 
 const Header = (props) => {
   const { artists, albums, changeView, view } = props;
-  console.log('props', props);
   return (
     <div>
       <ul id='menu'>

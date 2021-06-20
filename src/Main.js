@@ -17,7 +17,6 @@ class Main extends React.Component {
   }
   async changeView(view){
     this.setState({ view })
-    console.log('view set to', view)
   }
   async componentDidMount() {
     try{
@@ -36,8 +35,6 @@ class Main extends React.Component {
     catch(ex){
       console.log('ERROR reading albums - ', ex);
     }
-    console.log('Artists:', this.state.artists);
-    console.log('Albums:',this.state.albums);
   }
   render(){
     return (
