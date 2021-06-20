@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "DATABASE_URL=postgres://localhost/acme_tdd_test mocha spec.js",
+    "test": "DATABASE_URL=postgres://postgres:FSA123localhost/@acme_tdd_test mocha spec.js",
     "test:dev": "npm run test -- --watch",
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode=development",
@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "pg": "^8.6.0",
     "sequelize": "^6.6.2"

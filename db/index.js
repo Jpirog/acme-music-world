@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const { INTEGER, STRING, UUID, UUIDV4 } = Sequelize.DataTypes;
 
-const conn = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost/acme_tdd');
+const conn = new Sequelize(process.env.DATABASE_URL || 'postgres://postgres:FSA123@localhost/acme_tdd');
 
 const Artist = conn.define('artist', {
   id: {
